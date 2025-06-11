@@ -1,0 +1,172 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  header {
+    background-color: #00796b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    /* Makes the header fixed */
+    top: 0;
+    width: 100%;
+    /* Ensures the header spans the full width */
+    z-index: 1000;
+    /* Keeps the header above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+
+  header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+
+  nav {
+    text-align: center;
+    background-color: #004d40;
+    padding: 10px 0;
+    margin-top: 100px;
+    /* Prevent content overlap with fixed header */
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  section {
+    max-width: 1200px;
+    margin: 120px auto 20px;
+    /* Adds space below the header */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  section h2 {
+    text-align: center;
+    color: #00796b;
+  }
+
+  .about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .about-container img {
+    max-width: 150px;
+    border-radius: 10px;
+    flex: 0 0 150px;
+  }
+
+  .skills,
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    flex: 1 1 calc(33% - 30px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .card h3 {
+    color: #004d40;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004d40;
+    color: #fff;
+    margin-top: 20px;
+  }
+
+  footer a {
+    color: #ffcc80;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2em;
+    }
+
+    .profile-image {
+      width: 80px;
+      height: 80px;
+      top: 10px;
+      left: 10px;
+    }
+
+    .about-container img {
+      max-width: 120px;
+      flex: 0 0 120px;
+    }
+
+    .card {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    nav a {
+      display: block;
+      margin: 5px 0;
+    }
+
+    .card {
+      flex: 1 1 100%;
+    }
+
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .about-container img {
+      margin-bottom: 10px;
+    }
+  }
+</style>
