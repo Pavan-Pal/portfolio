@@ -1,9 +1,1 @@
 README.md
-.gitignore
-package-lock.json
-package.json
-node_modules/
-dist/
-src/
-.vscode/
-# Ignore build artifacts
